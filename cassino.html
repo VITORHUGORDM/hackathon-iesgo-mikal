@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎰 Cassino Slot - Jogo de Caça-Níqueis</title>
+    <meta name="description" content="Jogue no melhor cassino slot! Gire os rolos e ganhe prêmios incríveis.">
+    <link rel="stylesheet" href="cassino.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Header -->
+            <header class="header">
+                <h1 class="title">🎰 CASSINO SLOT 🎰</h1>
+                <p class="subtitle">Gire e tente a sorte!</p>
+            </header>
+
+            <!-- Credits Display -->
+            <div class="credits-container">
+                <div class="credits-info">
+                    <div class="coin-icon">💰</div>
+                    <div>
+                        <p class="label">Créditos</p>
+                        <p class="credits-value" id="credits">1000</p>
+                    </div>
+                </div>
+                <button class="btn-add-credits" id="addCreditsBtn">
+                    ➕ Adicionar 500
+                </button>
+            </div>
+
+            <!-- Slot Reels -->
+            <div class="reels-container">
+                <div class="reel" id="reel1">🍒</div>
+                <div class="reel" id="reel2">🍒</div>
+                <div class="reel" id="reel3">🍒</div>
+            </div>
+
+            <!-- Last Win Display -->
+            <div class="win-display" id="winDisplay"></div>
+
+            <!-- Bet Controls -->
+            <div class="bet-controls">
+                <button class="btn-bet" id="decreaseBet">➖</button>
+                <div class="bet-display">
+                    <p class="label">Aposta</p>
+                    <p class="bet-value" id="betValue">10</p>
+                </div>
+                <button class="btn-bet" id="increaseBet">➕</button>
+            </div>
+
+            <!-- Spin Button -->
+            <button class="btn-spin" id="spinBtn">
+                🎮 GIRAR (<span id="betAmount">10</span> créditos)
+            </button>
+
+            <!-- Paytable -->
+            <div class="paytable">
+                <h3 class="paytable-title">💰 Tabela de Prêmios 💰</h3>
+                <div class="paytable-grid">
+                    <div class="paytable-item">
+                        <span>💎💎💎</span>
+                        <span class="payout">50x</span>
+                    </div>
+                    <div class="paytable-item">
+                        <span>7️⃣7️⃣7️⃣</span>
+                        <span class="payout">30x</span>
+                    </div>
+                    <div class="paytable-item">
+                        <span>⭐⭐⭐</span>
+                        <span class="payout">20x</span>
+                    </div>
+                    <div class="paytable-item">
+                        <span>🔔🔔🔔</span>
+                        <span class="payout">15x</span>
+                    </div>
+                    <div class="paytable-item">
+                        <span>🍒🍒🍒</span>
+                        <span class="payout">10x</span>
+                    </div>
+                    <div class="paytable-item">
+                        <span>🍇🍇🍇</span>
+                        <span class="payout">10x</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="cassino.js"></script>
+</body>
+</html>
